@@ -33,7 +33,7 @@ public class Timer
 		timeEvents = new LinkedList <TimeEvent> ();
 		
 		timeline = new Timeline(
-			    new KeyFrame(Duration.millis(1000), (ActionEvent e) ->
+			    new KeyFrame(Duration.millis(period), (ActionEvent e) ->
 			    {
 					date = LocalDate.now();
 					time = LocalTime.now();		
