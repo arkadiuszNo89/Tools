@@ -43,24 +43,23 @@
   
   scene.setRoot(PaneData.get(0));
   
+3. Timer
   
-  3. Timer
-  
-    Klasa podczas tworzenia jej instacji rozpoczyna cykliczny Timer, o częstotliwości nadanej przez nas w parametrze konstruktora. 
-    Timer wykonuje metody z listy interfejsów. 
-    Do listy nadpisane interfejsy dodajemy sami, w zależności od tego ile i jakie czynności chcemy wykonać co daną jednostkę czasu (addTimeEvent(TimeEvent... events)).
+  Klasa podczas tworzenia jej instacji rozpoczyna cykliczny Timer, o częstotliwości nadanej przez nas w parametrze konstruktora. 
+  Timer wykonuje metody z listy interfejsów. 
+  Do listy nadpisane interfejsy dodajemy sami, w zależności od tego ile i jakie czynności chcemy wykonać co daną jednostkę czasu (addTimeEvent(TimeEvent... events)).
     
-    Dotkowo Timer zawiera metody:
-    - void play (boolean playState) - uruchamia, bądź zatrzymuje Timer
-    - int minutesLongCounter(LocalDate date,  LocalTime time) - przelicznik czasu od momentu użycia metody do momentu podanego poprzez         parametry, w przeliczeniu na minuty.
-    - String timeLeft (LocalDate date, LocalTime time) - tak jak wyżej, z tym że zwraca String z czasem rozpisanym na dni, godziny oraz       minuty.
-    - double progressCounter(int totalTime, LocalDate date, LocalTime time) - liczy procentowy progres danego wydarzenia w oparciu o           czas początkowy i końcowy. Zwrócona wartość mieści się w przedziale [0,1].
+  Dotkowo Timer zawiera metody:
+  - void play (boolean playState) - uruchamia, bądź zatrzymuje Timer
+  - int minutesLongCounter(LocalDate date,  LocalTime time) - przelicznik czasu od momentu użycia metody do momentu podanego poprzez         parametry, w przeliczeniu na minuty.
+  - String timeLeft (LocalDate date, LocalTime time) - tak jak wyżej, z tym że zwraca String z czasem rozpisanym na dni, godziny oraz       minuty.
+  - double progressCounter(int totalTime, LocalDate date, LocalTime time) - liczy procentowy progres danego wydarzenia w oparciu o           czas początkowy i końcowy. Zwrócona wartość mieści się w przedziale [0,1].
+   
+ 4. InitTools
     
-   4. InitTools
-    
-     Zawiera metody do inicjowania obiektów klasy Spinner, DatePicker, TextField.  
+  Zawiera metody do inicjowania obiektów klasy Spinner, DatePicker, TextField.  
      
-     Zawiera również:
+  Zawiera również:
      
-     - <T extends Node> void setVisables(boolean state, T [] arrayOfObjects) - metoda do ustawiania widoczności dla wielu obiektów             jednocześnie
-     - void addLabelLine(Pane pane, String style, int fontSize, String... textArray) - metoda dodająca wiele obiektów klasy Label
+  - <T extends Node> void setVisables(boolean state, T [] arrayOfObjects) - metoda do ustawiania widoczności dla wielu obiektów             jednocześnie
+  - void addLabelLine(Pane pane, String style, int fontSize, String... textArray) - metoda dodająca wiele obiektów klasy Label
