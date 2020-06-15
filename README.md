@@ -13,10 +13,15 @@
   Przykład:
 
   SaveCreator saveC = new SaveCreator("Projekt", "Typ Obiektu", 4);
+  
   saveC.act(Mode.SAVE_AS, listaTotal1);
+  
   saveC.changeObjectType("Obiekt nr 2", 2);
+  
   saveC.act(Mode.ADD_TO_SAVE_FILE, listaTotal2);
+  
   ArrayList list = new ArrayList ();
+  
   list = saveC.act(Mode.LOAD);
   
 
@@ -31,8 +36,11 @@
   Przykład:
 
   PaneData.addPane("border", new BorderPane());
+  
   PaneData.addFXML("main", "Sample.fxml");
+  
   scene.setRoot(PaneData.get("main"));
+  
   scene.setRoot(PaneData.get(0));
   
   
