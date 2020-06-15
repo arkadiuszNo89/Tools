@@ -47,7 +47,8 @@
   3. Timer
   
     Klasa podczas tworzenia jej instacji rozpoczyna cykliczny Timer, o częstotliwości nadanej przez nas w parametrze konstruktora. 
-    Timer wykonuje metody z listy interfejsów. Do listy nadpisane interfejsy dodajemy sami, w zależności od tego ile i jakie czynności chcemy wykonać co daną jednostkę czasu (addTimeEvent(TimeEvent... events)).
+    Timer wykonuje metody z listy interfejsów. 
+    Do listy nadpisane interfejsy dodajemy sami, w zależności od tego ile i jakie czynności chcemy wykonać co daną jednostkę czasu (addTimeEvent(TimeEvent... events)).
     
     Dotkowo Timer zawiera metody:
     - void play (boolean playState) - uruchamia, bądź zatrzymuje Timer
